@@ -55,6 +55,8 @@
       * {
         font-family: "Nanum Pen Script", cursive;
       }
+      #a {
+      }
     </style>
     <title>HTML/CSS Project</title>
 
@@ -63,7 +65,24 @@
     <link rel="icon" /> -->
   </head>
   <body>
-    <div class="container bg-light rounded">
+    <div class="container bg-info rounded sticky-top">
+      <nav class="navbar">
+        <div class="container-fluid">
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </nav>
+    </div>
+    <div id="a" class="container bg-light rounded">
       <header class="bootstrap-header lh-1 py-3">
         <div class="row">
           <div class="col">
@@ -216,20 +235,18 @@
           <br />
         </div>
         <div class="row p-4 d-flex flex-column position-static text-center">
-          <p>최근 코로나로 Youtube와 Netflix가 좋아요</p>
-          <p>예쁜 아기를 키우느라 육아에 바빠요</p>
-          <p>요리에도 관심이 생겼어요</p>
+          <a href="onlyhope0103@naver.com">메일쓰기</a>
+          <a href="tel:010-7223-0103">전화걸기</a>
         </div>
       </div>
     </main>
     <footer class="bootstrap-footer">
       <div class="container">
-        <!-- <div class="p-4 p-md-5 mb-4 rounded text-bg-dark"> -->
-        <!-- <div class="col-md-6 px-0"> -->
         <div class="col">
           <div class="row rounded text-bg-danger p-5">
             <mark>그 밖에...</mark>
             <p>3일동안 좋은 강의 하시느라 수고하셨습니다.</p>
+            <a href="#">Back to top</a>
           </div>
         </div>
       </div>
